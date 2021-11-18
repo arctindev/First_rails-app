@@ -16,6 +16,55 @@
 
  body {
      min-height: 100vh;
-     display: grid;
-     grid-template-rows: 60px 1fr 100px;
+     width: 100%;
+     display: flex;
+     flex-direction: column;
+ }
+
+ header {
+     height: 60px;
+ }
+
+ footer {
+     padding: 20px 0;
+     height: 100px;
+ }
+
+ .page-content {
+  min-height: calc(100vh - 60px - 100px)
+ }
+
+ /* -------------------------------------------------------- */
+ /* utility css classes */
+ /* -------------------------------------------------------- */
+ .overflow-x-enable {
+    overflow-x: auto;
+ }
+
+ .overflow-y-enable {
+    overflow-y: auto;
+ }
+
+ .margin0 {
+     margin: 0;
+ }
+
+ .mt-30px {
+     margin-top: 30px;
+ }
+
+ .mb-3px {
+     margin-bottom: 3px;
+ }
+
+ .font-light {
+     color: white;
+ }
+
+ .border-bottom-grey {
+     border-bottom: 1px solid rgba(0,0,0,.125);
+ }
+
+ .inline {
+     display: inline;
  }

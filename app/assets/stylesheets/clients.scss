@@ -1,3 +1,55 @@
 // Place all the styles related to the clients controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+
+// ----------------------------------------------
+// index.html
+// ----------------------------------------------
+.client-table {
+    min-width: 750px;
+}
+
+.client-table-wrapper {
+    max-height: 400px;
+}
+
+.form-button {
+    min-width: 82px;
+}
+
+// ----------------------------------------------
+// edit.html , new.html
+// ----------------------------------------------
+
+.form-submit-wrapper {
+    display: inline;
+}
+
+.field {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.form-input:focus + .form-label {
+    font-weight: bold;
+}
+
+// ----------------------------------------------
+// show.html
+// ----------------------------------------------
+.details-label-wrapper {
+    max-width: 400px;
+    padding: 0.5rem 0;
+    display: flex;
+}
+
+.details-label-title {
+    width: 140px;
+}
+
+// ----------------------------------------------
+// edit.html , show.html, new.html
+// ----------------------------------------------
+.card-wrapper {
+    max-width: 500px;
+}

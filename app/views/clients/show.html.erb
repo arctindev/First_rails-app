@@ -1,24 +1,50 @@
-<p id="notice"><%= notice %></p>
+<br>
+<div class="card card-wrapper">
+  <div class="card-header bg-dark font-light">
+    <h2>Client Details</h2>
+  </div>
+  <div class="card-body">
+    
+    <div class="details-label-wrapper border-bottom-grey">
+      <p class="details-label-title margin0"><strong>First name:</strong></p>
+      <p class="margin0">
+        <%= @client.first_name %>
+      </p>
+    </div>
 
-<p>
-  <strong>First name:</strong>
-  <%= @client.first_name %>
-</p>
+    <div class="details-label-wrapper border-bottom-grey">
+      <p class="details-label-title margin0"><strong>Last name:</strong></p>
+      <p class="margin0">
+        <%= @client.last_name %>
+      </p>
+    </div>
 
-<p>
-  <strong>Last name:</strong>
-  <%= @client.last_name %>
-</p>
+    <div class="details-label-wrapper border-bottom-grey">
+      <p class="details-label-title margin0"><strong>Email:</strong></p>
+      <p class="margin0">
+        <%= @client.email %>
+      </p>
+    </div>
 
-<p>
-  <strong>Email:</strong>
-  <%= @client.email %>
-</p>
+    <div class="details-label-wrapper">
+      <p class="details-label-title margin0"><strong>Number:</strong></p>
+      <p class="margin0">
+        <%= @client.number %>
+      </p>
+    </div>
 
-<p>
-  <strong>Number:</strong>
-  <%= @client.number %>
-</p>
+  </div>
+</div>
 
-<%= link_to 'Edit', edit_client_path(@client) %> |
-<%= link_to 'Back', clients_path %>
+<br>
+
+<%= link_to 'Edit', edit_client_path(@client), class: "btn btn-primary" %> |
+<%= link_to 'Back', clients_path, class: "btn btn-dark" %>
+
+<% if notice %>
+  <div class="alert alert-success mt-30px" role="alert">
+    <p id="notice">
+    <%= notice %>
+    </p>
+  </div>
+<% end %>
