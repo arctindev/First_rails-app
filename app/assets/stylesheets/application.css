@@ -13,3 +13,9 @@
  *= require_tree .
  *= require_self
  */
+
+ body {
+     min-height: 100vh;
+     display: grid;
+     grid-template-rows: 60px 1fr 100px;
+ }
