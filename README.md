@@ -35,7 +35,10 @@ Things i learned:
  <% if something %>
  html content
  <% end %>
+- to add css class for from input, example: <%= form.submit :class => (class names) %>
+- basics of bootstrap css framework (i know, should have done it way earlier)
 
 To do:
 
 1. Research about <%= %> tag, i need to understand it better, looks like its calling for an object or partial
+2. Learn and improve skills with bootstrap for faster prototyping

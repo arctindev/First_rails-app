@@ -11,27 +11,31 @@
     </div>
   <% end %>
 
-  <div class="field">
-    <%= form.label :first_name %>
-    <%= form.text_field :first_name %>
+  <div class="field form-group">
+    <%= form.text_field :first_name, class:"form-input form-control"  %>
+    <%= form.label :first_name, class:"form-label mb-3px", id:"first_name_label" %>
   </div>
 
-  <div class="field">
-    <%= form.label :last_name %>
-    <%= form.text_field :last_name %>
+  <div class="field form-group">
+    <%= form.text_field :last_name, class:"form-input form-control" %>
+    <%= form.label :last_name, class:"form-label mb-3px" %>
   </div>
 
-  <div class="field">
-    <%= form.label :email %>
-    <%= form.text_field :email %>
+  <div class="field form-group">
+    <%= form.text_field :email, class:"form-input form-control" %>
+    <%= form.label :email, class:"form-label mb-3px" %>
   </div>
 
-  <div class="field">
-    <%= form.label :number %>
-    <%= form.text_field :number %>
+  <div class="field form-group">
+    <%= form.text_field :number, class:"form-input form-control" %>
+    <%= form.label :number, class:"form-label mb-3px" %>
   </div>
 
-  <div class="actions">
-    <%= form.submit %>
+  <br>
+
+  <div class="form-submit-wrapper">
+    <%= form.submit :class => "btn btn-success" %>
   </div>
+
+  <br>
 <% end %>

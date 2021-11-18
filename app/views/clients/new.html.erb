@@ -1,5 +1,14 @@
-<h1>Add New Client</h1>
+<br>
 
-<%= render 'form', client: @client %>
+<div class="card card-wrapper">
+  <div class="card-header bg-dark font-light">
+    <h2>Add New Client</h2>
+  </div>
+  <div class="card-body">
+    <%= render 'form', client: @client %>
+  </div>
+</div>
 
-<%= link_to 'Back', clients_path %>
+<div class="mt-30px">
+  <%= link_to 'Back', clients_path, class: "btn btn-dark" %>
+</div>
