@@ -22,3 +22,20 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
+
+Things i learned:
+
+- to start : rails s
+- to create new page : rails g controller (controler name) (html file name)
+- to show routes list : rails routes
+- to create working model with form snippets : rails g scaffold (model name) (table name):(table type) (table name):(table type)
+- to push migration : rails db:migrate
+- to render patrial : <%= render (patrial route) %>
+- conditional rendering in ruby :
+ <% if something %>
+ html content
+ <% end %>
+
+To do:
+
+1. Research about <%= %> tag, i need to understand it better, looks like its calling for an object or partial
