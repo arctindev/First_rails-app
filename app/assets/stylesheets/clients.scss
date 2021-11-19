@@ -19,23 +19,6 @@
 }
 
 // ----------------------------------------------
-// edit.html , new.html
-// ----------------------------------------------
-
-.form-submit-wrapper {
-    display: inline;
-}
-
-.field {
-    display: flex;
-    flex-direction: column-reverse;
-}
-
-.form-input:focus + .form-label {
-    font-weight: bold;
-}
-
-// ----------------------------------------------
 // show.html
 // ----------------------------------------------
 
