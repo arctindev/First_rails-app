@@ -1,15 +1,3 @@
 <br>
+<%= render 'form', client: @client, showButton:true, backButton:true, formTitle:"Editing Client" %>
 
-<div class="card card-wrapper">
-  <div class="card-header bg-dark font-light">
-    <h2>Editing Client</h2>
-  </div>
-  <div class="card-body">
-    <%= render 'form', client: @client %>
-  </div>
-</div>
-
-<div class="mt-30px">
-  <%= link_to 'Show', @client, class: "btn btn-primary" %> |
-  <%= link_to 'Back', clients_path, class: "btn btn-dark" %>
-</div>

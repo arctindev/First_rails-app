@@ -22,9 +22,9 @@
           <td><%= client.last_name %></td>
           <td><%= client.email %></td>
           <td><%= client.number %></td>
-          <td><%= link_to 'Show', client, class: "btn btn-primary form-button" %></td>
-          <td><%= link_to 'Edit', edit_client_path(client), class: "btn btn-success form-button" %></td>
-          <td><%= link_to 'Destroy', client, class: "btn btn-danger form-button", method: :delete, data: { confirm: 'Are you sure?' } %></td>
+          <td><%= link_to 'Show', client, class: "btn btn-primary table-button" %></td>
+          <td><%= link_to 'Edit', edit_client_path(client), class: "btn btn-success table-button" %></td>
+          <td><%= link_to 'Destroy', client, class: "btn btn-danger table-button", method: :delete, data: { confirm: 'Are you sure?' } %></td>
         </tr>
       <% end %>
     </tbody>

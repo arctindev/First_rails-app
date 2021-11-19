@@ -14,57 +14,68 @@
  *= require_self
  */
 
- body {
-     min-height: 100vh;
-     width: 100%;
-     display: flex;
-     flex-direction: column;
- }
+body {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
 
- header {
-     height: 60px;
- }
+header {
+    height: 60px;
+}
 
- footer {
-     padding: 20px 0;
-     height: 100px;
- }
+footer {
+    padding: 20px 0;
+    height: 100px;
+}
 
- .page-content {
-  min-height: calc(100vh - 60px - 100px)
- }
+.page-content {
+min-height: calc(100vh - 60px - 100px)
+}
 
- /* -------------------------------------------------------- */
- /* utility css classes */
- /* -------------------------------------------------------- */
- .overflow-x-enable {
-    overflow-x: auto;
- }
+/* -------------------------------------------------------- */
+/* utility css classes */
+/* -------------------------------------------------------- */
 
- .overflow-y-enable {
-    overflow-y: auto;
- }
+/* margins */
 
- .margin0 {
-     margin: 0;
- }
+.margin0 {
+margin: 0;
+}
 
- .mt-30px {
-     margin-top: 30px;
- }
+.mt-30px {
+margin-top: 30px;
+}
 
- .mb-3px {
-     margin-bottom: 3px;
- }
+.mb-3px {
+margin-bottom: 3px;
+}
 
- .font-light {
-     color: white;
- }
+/* overflow */
 
- .border-bottom-grey {
-     border-bottom: 1px solid rgba(0,0,0,.125);
- }
+.overflow-x-enable {
+overflow-x: auto;
+}
 
- .inline {
-     display: inline;
- }
+.overflow-y-enable {
+overflow-y: auto;
+}
+
+/* font-colors */
+
+.font-light {
+    color: white;
+}
+
+/* borders */
+
+.border-bottom-grey {
+    border-bottom: 1px solid rgba(0,0,0,.125);
+}
+
+/* displays */
+
+.inline {
+    display: inline;
+}

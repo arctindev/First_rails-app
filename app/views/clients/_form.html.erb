@@ -1,3 +1,12 @@
+<%
+=begin%>
+****** props: ******
+showButton: boolean
+backButton: boolean
+formTitle: string
+<%
+=end%>
+
 <%= form_with(model: client) do |form| %>
   <% if client.errors.any? %>
     <div id="error_explanation">
@@ -11,31 +20,49 @@
     </div>
   <% end %>
 
-  <div class="field form-group">
-    <%= form.text_field :first_name, class:"form-input form-control"  %>
-    <%= form.label :first_name, class:"form-label mb-3px", id:"first_name_label" %>
+<div class="card card-wrapper">
+  <div class="card-header bg-dark font-light">
+    <h2><%= formTitle %></h2>
   </div>
 
-  <div class="field form-group">
-    <%= form.text_field :last_name, class:"form-input form-control" %>
-    <%= form.label :last_name, class:"form-label mb-3px" %>
+  <div class="card-body">
+
+    <div class="field form-group mb-3px">
+      <%= form.text_field :first_name, class:"form-input form-control"  %>
+      <%= form.label :first_name, class:"form-label mb-3px" %>
+    </div>
+
+    <div class="field form-group mb-3px">
+      <%= form.text_field :last_name, class:"form-input form-control" %>
+      <%= form.label :last_name, class:"form-label mb-3px" %>
+    </div>
+
+    <div class="field form-group mb-3px">
+      <%= form.text_field :email, class:"form-input form-control" %>
+      <%= form.label :email, class:"form-label mb-3px" %>
+    </div>
+
+    <div class="field form-group mb-3px">
+      <%= form.text_field :number, class:"form-input form-control" %>
+      <%= form.label :number, class:"form-label mb-3px" %>
+    </div>
+
   </div>
+</div>
 
-  <div class="field form-group">
-    <%= form.text_field :email, class:"form-input form-control" %>
-    <%= form.label :email, class:"form-label mb-3px" %>
-  </div>
+<br>
 
-  <div class="field form-group">
-    <%= form.text_field :number, class:"form-input form-control" %>
-    <%= form.label :number, class:"form-label mb-3px" %>
-  </div>
+<div class="form-submit-wrapper">
+  <%= form.submit class:"btn btn-success" %>
 
-  <br>
+  <% if showButton%> |
+    <%= link_to 'Show', @client, class: "btn btn-primary" %>
+  <% end%>
 
-  <div class="form-submit-wrapper">
-    <%= form.submit :class => "btn btn-success" %>
-  </div>
+  <% if backButton%> |
+    <%= link_to 'Back', clients_path, class: "btn btn-dark" %>
+  <% end%>
 
+</div>
   <br>
 <% end %>
