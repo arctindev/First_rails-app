@@ -35,8 +35,17 @@ Things i learned:
  <% if something %>
  html content
  <% end %>
-- to add css class for from input, example: <%= form.submit :class => (class names) %>
+- to add css class for from input, example: <%= form.submit :class => (class names) %> or just <%= form.submit class:(class names) %>
 - basics of bootstrap css framework (i know, should have done it way earlier)
+- basics of devise gem (
+    steps:
+    -adding gem to gemfile,
+    - bundle install,
+    - rails generate devise:install,
+    - rails g devise:views,
+    - rails generate devise user (generate db model),
+    - rails db:migrate (migrate db)
+    )
 
 To do:
 
